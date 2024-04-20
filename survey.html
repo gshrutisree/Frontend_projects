@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Survey Form</title>
+ <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+ <div class="container">
+ <h1 id="title">Survey Form</h1>
+ <p id="description">Please take a moment to fill out our survey.</p>
+ <form id="survey-form">
+ <label for="name" id="name-label">Name:</label>
+ <input type="text" id="name" name="name" placeholder="Enter your name" 
+required>
+ 
+ <label for="email" id="email-label">Email:</label>
+ <input type="email" id="email" name="email" placeholder="Enter your email"
+required>
+ 
+ <label for="number" id="number-label">Age:</label>
+ <input type="number" id="number" name="age" placeholder="Enter your age" 
+min="18" max="100" required>
+ 
+ <label for="dropdown" id="dropdown-label">Select your occupation:</label>
+ <select id="dropdown" name="occupation">
+ <option value="student">Student</option>
+ <option value="professional">Professional</option>
+ <option value="retired">Retired</option>
+ <option value="other">Other</option>
+ </select>
+ 
+ <fieldset>
+ <legend>Gender:</legend>
+ <input type="radio" id="male" name="gender" value="male">
+ <label for="male">Male</label>
+ <input type="radio" id="female" name="gender" value="female">
+ <label for="female">Female</label>
+ <input type="radio" id="other-gender" name="gender" value="other">
+ <label for="other-gender">Other</label>
+ </fieldset>
+ 
+ <fieldset>
+ <legend>Select your interests:</legend>
+ <input type="checkbox" id="interest1" name="interest" value="music">
+ <label for="interest1">Music</label>
+ <input type="checkbox" id="interest2" name="interest" value="sports">
+ <label for="interest2">Sports</label>
+ <input type="checkbox" id="interest3" name="interest" value="books">
+ <label for="interest3">Books</label>
+ </fieldset>
+ 
+ <label for="comments">Comments:</label>
+ <textarea id="comments" name="comments" placeholder="Enter your comments 
+here"></textarea>
+ 
+ <input type="submit" id="submit" value="Submit">
+ </form>
+ </div>
+</body>
+</html>
